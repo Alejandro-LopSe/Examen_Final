@@ -1,0 +1,20 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-all --env --watch main.ts",
+    "deploy": "deployctl deploy --token=ddp_pybLtXGya3GD92IxHj7BZXljGs9iRx1716Vm --project=examen-final --env --prod ./main.ts"
+  },
+  "imports": {
+    "@apollo/server": "npm:@apollo/server@^4.9.5",
+    "@apollo/server/standalone": "npm:@apollo/server@^4.9.5/standalone",
+    "graphql": "npm:graphql@^16.8.1",
+    "mongoose": "npm:mongoose@8.0.1"
+  },
+  "deploy": {
+    "project": "7ae25e9c-1c77-4934-90e3-9bdb7f297321",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
